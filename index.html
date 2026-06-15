@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Printer Support | Expert Help for All Brands</title>
+<meta name="description" content="Get expert printer support for HP, Canon, Epson, Brother and more. Call now for fast troubleshooting, setup help, and driver assistance.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1a1a2e;background:#fff;font-size:16px;line-height:1.6}
+
+:root{
+  --navy:#0f1b35;
+  --blue:#1a4fd6;
+  --blue-light:#2563eb;
+  --sky:#e8f0fe;
+  --green:#16a34a;
+  --green-light:#dcfce7;
+  --orange:#ea580c;
+  --gray:#64748b;
+  --gray-light:#f1f5f9;
+  --border:#e2e8f0;
+  --white:#ffffff;
+}
+
+/* TOPBAR */
+.topbar{background:var(--navy);padding:10px 24px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.topbar-text{font-size:13px;color:#94a3b8}
+.topbar-num{font-size:15px;font-weight:700;color:#fff;letter-spacing:0.3px}
+.live-dot{display:inline-flex;align-items:center;gap:6px;background:rgba(22,163,74,0.2);border:1px solid rgba(22,163,74,0.4);border-radius:20px;padding:3px 10px;font-size:12px;color:#4ade80}
+.live-dot::before{content:'';width:7px;height:7px;background:#4ade80;border-radius:50%;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+
+/* NAV */
+nav{background:#fff;border-bottom:1px solid var(--border);padding:14px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.nav-brand{display:flex;align-items:center;gap:10px}
+.nav-logo{width:34px;height:34px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.nav-name{font-family:'Sora',sans-serif;font-size:17px;font-weight:700;color:var(--navy)}
+.nav-name span{color:var(--blue)}
+.nav-disclaimer{font-size:11px;color:var(--gray);max-width:340px;line-height:1.4}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.btn-call{background:var(--blue);color:#fff;padding:11px 22px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:background 0.2s}
+.btn-call:hover{background:var(--blue-light)}
+.btn-call-phone{font-size:15px;font-weight:700;color:var(--blue);text-decoration:none}
+.btn-call-phone:hover{color:var(--blue-light)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0f1b35 0%,#1a3a6b 100%);padding:72px 40px 80px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:20px;padding:6px 16px;font-size:13px;color:#93c5fd;margin-bottom:24px}
+.hero h1{font-family:'Sora',sans-serif;font-size:clamp(28px,5vw,52px);font-weight:800;color:#fff;line-height:1.15;margin-bottom:18px;max-width:700px;margin-left:auto;margin-right:auto}
+.hero h1 span{color:#60a5fa}
+.hero-sub{font-size:17px;color:#94a3b8;max-width:520px;margin:0 auto 36px;line-height:1.7}
+.hero-cta-group{display:flex;flex-direction:column;align-items:center;gap:12px}
+.btn-hero{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--navy);padding:16px 36px;border-radius:10px;font-size:18px;font-weight:700;text-decoration:none;transition:transform 0.15s,box-shadow 0.15s;box-shadow:0 4px 24px rgba(0,0,0,0.2)}
+.btn-hero:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.25)}
+.btn-hero .icon{font-size:22px}
+.hero-note{font-size:13px;color:#64748b}
+.hero-brands{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-top:48px;padding-top:40px;border-top:1px solid rgba(255,255,255,0.1)}
+.brands-label{font-size:12px;color:#64748b;letter-spacing:1px;text-transform:uppercase;width:100%;text-align:center;margin-bottom:4px}
+.brand-pill{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:6px 16px;font-size:13px;font-weight:600;color:#cbd5e1}
+
+/* TRUST BAR */
+.trust-bar{background:var(--green-light);border-bottom:1px solid #bbf7d0;padding:14px 40px;display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:#15803d}
+.trust-item .ti{font-size:16px}
+
+/* ISSUES SECTION */
+.section{padding:72px 40px}
+.section-label{font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.section-title{font-family:'Sora',sans-serif;font-size:clamp(22px,3vw,34px);font-weight:700;color:var(--navy);margin-bottom:12px;line-height:1.2}
+.section-sub{font-size:15px;color:var(--gray);max-width:520px;line-height:1.7}
+.section-hd{margin-bottom:44px}
+.issues-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.issue-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:22px 20px;display:flex;align-items:flex-start;gap:14px;transition:border-color 0.2s,box-shadow 0.2s;cursor:default}
+.issue-card:hover{border-color:var(--blue);box-shadow:0 4px 16px rgba(26,79,214,0.08)}
+.issue-icon{width:42px;height:42px;background:var(--sky);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.issue-text h3{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.issue-text p{font-size:13px;color:var(--gray);line-height:1.5}
+
+/* BRANDS SECTION */
+.bg-gray{background:var(--gray-light)}
+.brands-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.brand-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 16px;text-align:center;transition:border-color 0.2s}
+.brand-card:hover{border-color:var(--blue)}
+.brand-card .b-icon{font-size:30px;margin-bottom:8px}
+.brand-card .b-name{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.brand-card .b-tag{font-size:11px;color:var(--gray)}
+
+/* HOW IT WORKS */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;counter-reset:steps}
+.step-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:28px 22px;position:relative}
+.step-num{width:32px;height:32px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;margin-bottom:16px}
+.step-card h3{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.step-card p{font-size:13px;color:var(--gray);line-height:1.6}
+
+/* CTA BAND */
+.cta-band{background:var(--blue);padding:64px 40px;text-align:center}
+.cta-band h2{font-family:'Sora',sans-serif;font-size:clamp(22px,3.5vw,36px);font-weight:700;color:#fff;margin-bottom:10px}
+.cta-band p{font-size:15px;color:#bfdbfe;margin-bottom:32px}
+.btn-cta-white{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--blue);padding:16px 36px;border-radius:10px;font-size:18px;font-weight:700;text-decoration:none;transition:transform 0.15s}
+.btn-cta-white:hover{transform:translateY(-2px)}
+.cta-note{font-size:13px;color:#93c5fd;margin-top:14px}
+
+/* DISCLAIMER SECTION */
+.disclaimer-section{background:#f8fafc;border-top:1px solid var(--border);padding:36px 40px}
+.disclaimer-box{max-width:860px;margin:0 auto;background:#fff;border:1px solid var(--border);border-radius:10px;padding:24px 28px}
+.disclaimer-box h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.disclaimer-box p{font-size:12px;color:#64748b;line-height:1.8;margin-bottom:8px}
+.disclaimer-box p:last-child{margin-bottom:0}
+
+/* FOOTER */
+footer{background:var(--navy);padding:40px 40px 24px;color:#94a3b8}
+.footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.footer-brand-name{font-family:'Sora',sans-serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:6px}
+.footer-brand-name span{color:#60a5fa}
+.footer-desc{font-size:13px;line-height:1.7;max-width:260px}
+.footer-links h4{font-size:13px;font-weight:600;color:#fff;margin-bottom:12px}
+.footer-links ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.footer-links ul li a{font-size:13px;color:#94a3b8;text-decoration:none}
+.footer-links ul li a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:12px;color:#475569}
+.footer-bottom a{color:#475569;text-decoration:underline}
+
+/* FLOATING CALL BAR (mobile) */
+.float-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--blue);padding:14px 20px;z-index:200;text-align:center}
+.float-bar a{display:block;font-size:17px;font-weight:700;color:#fff;text-decoration:none}
+.float-bar .float-note{font-size:11px;color:#bfdbfe;margin-top:2px}
+
+@media(max-width:768px){
+  nav{padding:12px 16px}
+  .nav-disclaimer{display:none}
+  .hero{padding:48px 20px 56px}
+  .trust-bar{padding:12px 16px;gap:16px}
+  .section{padding:48px 20px}
+  .cta-band{padding:48px 20px}
+  .disclaimer-section{padding:28px 16px}
+  .disclaimer-box{padding:18px}
+  footer{padding:32px 20px 80px}
+  .float-bar{display:block}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span class="topbar-text">Printer Support Helpline — Available Now</span>
+  <a href="tel:+18556184329" class="topbar-num">+1 (855) 618-4329</a>
+  <span class="live-dot">Live</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-logo">🖨️</div>
+    <div>
+      <div class="nav-name">Printer<span>Help</span></div>
+      <div class="nav-disclaimer">Independent third-party support service. Not affiliated with any printer manufacturer.</div>
+    </div>
+  </div>
+  <div class="nav-cta">
+    <a href="tel:+18556184329" class="btn-call-phone">+1 (855) 618-4329</a>
+    <a href="tel:+18556184329" class="btn-call">Call Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">📞 Experts available now — average wait under 2 minutes</div>
+  <h1>Printer Not Working?<br><span>Get It Fixed Fast.</span></h1>
+  <p class="hero-sub">Talk to a live printer support specialist for HP, Canon, Epson, Brother, and more. Fast, friendly help — no appointment needed.</p>
+  <div class="hero-cta-group">
+    <a href="tel:+18556184329" class="btn-hero">
+      <span class="icon">📞</span>
+      Call +1 (855) 618-4329
+    </a>
+    <span class="hero-note">Toll-free · Available 7 days a week</span>
+  </div>
+  <div class="hero-brands">
+    <div class="brands-label">We support all major brands</div>
+    <span class="brand-pill">HP</span>
+    <span class="brand-pill">Canon</span>
+    <span class="brand-pill">Epson</span>
+    <span class="brand-pill">Brother</span>
+    <span class="brand-pill">Lexmark</span>
+    <span class="brand-pill">Samsung</span>
+    <span class="brand-pill">Xerox</span>
+    <span class="brand-pill">& More</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">✅ No hold music — talk to a person immediately</div>
+  <div class="trust-item">✅ Remote & phone support available</div>
+  <div class="trust-item">✅ All printer brands & models supported</div>
+  <div class="trust-item">✅ Friendly, US-based specialists</div>
+</div>
+
+<!-- ISSUES -->
+<section class="section">
+  <div class="section-hd">
+    <div class="section-label">What we help with</div>
+    <h2 class="section-title">Common Printer Problems We Solve</h2>
+    <p class="section-sub">Whatever's stopping you from printing, our specialists have seen it before and know how to fix it.</p>
+  </div>
+  <div class="issues-grid">
+    <div class="issue-card"><div class="issue-icon">🔌</div><div class="issue-text"><h3>Printer won't turn on</h3><p>Power issues, unresponsive units, and hardware faults diagnosed quickly.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">📡</div><div class="issue-text"><h3>Wireless / Wi-Fi setup</h3><p>Connect your printer to your home or office network without the headache.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">💻</div><div class="issue-text"><h3>Driver installation</h3><p>Install or reinstall the right drivers for Windows, Mac, or Chromebook.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">🚫</div><div class="issue-text"><h3>Printer offline errors</h3><p>Fix "printer offline" and queue errors so your jobs actually print.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">📄</div><div class="issue-text"><h3>Paper jams</h3><p>Step-by-step guidance to clear jams and prevent them from recurring.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">🖨️</div><div class="issue-text"><h3>Poor print quality</h3><p>Faded, streaky, or blurry prints caused by ink, alignment, or head clogs.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">🔵</div><div class="issue-text"><h3>Ink & toner issues</h3><p>Cartridge not recognized, low ink warnings, or incorrect ink errors.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">📠</div><div class="issue-text"><h3>Scanner & fax setup</h3><p>Get your all-in-one's scan and fax functions working the way they should.</p></div></div>
+    <div class="issue-card"><div class="issue-icon">🆕</div><div class="issue-text"><h3>New printer setup</h3><p>Full unboxing-to-printing setup assistance for brand new printers.</p></div></div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="section bg-gray">
+  <div class="section-hd">
+    <div class="section-label">All brands covered</div>
+    <h2 class="section-title">Support for Every Major Printer Brand</h2>
+    <p class="section-sub">One number, every brand. Our specialists are trained across all major manufacturers.</p>
+  </div>
+  <div class="brands-grid">
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">HP</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Canon</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Epson</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Brother</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Lexmark</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Samsung</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Xerox</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Dell</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">Kodak</div><div class="b-tag">All models</div></div>
+    <div class="brand-card"><div class="b-icon">🖨️</div><div class="b-name">OKI</div><div class="b-tag">All models</div></div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="section-hd">
+    <div class="section-label">How it works</div>
+    <h2 class="section-title">Printer Fixed in 3 Simple Steps</h2>
+    <p class="section-sub">No waiting, no guessing. Our process is fast and straightforward.</p>
+  </div>
+  <div class="steps">
+    <div class="step-card"><div class="step-num">1</div><h3>Call us</h3><p>Dial <strong>+1 (855) 618-4329</strong> and you'll be connected to a live specialist within minutes — no automated menus.</p></div>
+    <div class="step-card"><div class="step-num">2</div><h3>Describe the problem</h3><p>Tell us your printer brand, model if you know it, and what's happening. We'll diagnose the issue right on the call.</p></div>
+    <div class="step-card"><div class="step-num">3</div><h3>Get it fixed</h3><p>We'll walk you through the fix step by step, or remotely assist if needed, until your printer is back up and running.</p></div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Ready to Get Your Printer Working?</h2>
+  <p>Speak to a live specialist now — no wait, no runaround.</p>
+  <a href="tel:+18556184329" class="btn-cta-white">
+    📞 +1 (855) 618-4329
+  </a>
+  <div class="cta-note">Toll-free · 7 days a week · All brands supported</div>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer-section">
+  <div class="disclaimer-box">
+    <h4>⚠️ Important Disclosure</h4>
+    <p>PrinterHelp is an independent third-party technical support service provider. We are not affiliated with, endorsed by, or in any way officially connected to HP, Canon, Epson, Brother, Lexmark, Samsung, Xerox, Dell, Kodak, OKI, or any other printer manufacturer. All brand names, logos, and trademarks are the property of their respective owners and are used solely for descriptive purposes to identify the products our service supports.</p>
+    <p>Our technicians provide general troubleshooting and setup guidance. Fees may apply for certain services. Results may vary depending on the issue and device condition. For manufacturer warranty support, please contact the relevant brand directly.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">Printer<span>Help</span></div>
+      <p class="footer-desc">Independent third-party printer support for all major brands. Available 7 days a week.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Printer Setup</a></li>
+        <li><a href="#">Driver Help</a></li>
+        <li><a href="#">Wi-Fi Troubleshooting</a></li>
+        <li><a href="#">Ink & Toner</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Call Us</h4>
+      <ul>
+        <li><a href="tel:+18556184329">+1 (855) 618-4329</a></li>
+        <li><a href="#">7 days a week</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 PrinterHelp. Independent support service. Not affiliated with any manufacturer.</span>
+    <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+  </div>
+</footer>
+
+<!-- FLOATING CALL BAR (mobile only) -->
+<div class="float-bar">
+  <a href="tel:+18556184329">📞 Call +1 (855) 618-4329</a>
+  <div class="float-note">Tap to speak with a live specialist now</div>
+</div>
+
+</body>
+</html>
